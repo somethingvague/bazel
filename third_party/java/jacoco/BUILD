@@ -12,9 +12,9 @@ exports_files(["LICENSE"])
 
 package(default_visibility = ["//visibility:public"])
 
-LASTVERSION = "0.8.7"
+LASTVERSION = "0.8.9-SNAPSHOT"
 
-VERSIONS = ("0.8.7",)
+VERSIONS = ("0.8.7", "0.8.9-SNAPSHOT")
 
 filegroup(
     name = "srcs",
@@ -38,9 +38,9 @@ filegroup(
         ["*-sources.jar"],
         allow_empty = True,
     ) + ["LICENSE"] + [
-        "//third_party:asm/asm-9.2-sources.jar",
-        "//third_party:asm/asm-analysis-9.2-sources.jar",
-        "//third_party:asm/asm-commons-9.2-sources.jar",
+        "//third_party:asm/asm-9.4-sources.jar",
+        "//third_party:asm/asm-analysis-9.4-sources.jar",
+        "//third_party:asm/asm-commons-9.4-sources.jar",
     ],
 )
 
